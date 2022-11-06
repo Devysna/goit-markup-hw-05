@@ -52,8 +52,18 @@
         <section class="hero overlay section-no-padding">
             <div class="container">
             <h1 class="hero-title">Ефективні рішення для <br>вашого бізнесу</h1>
-            <button class="buttom" type="button">Замовити послугу</button>
-            </div>
+            <button data-modal-open class="buttom" type="button">Замовити послугу</button>
+                 <div data-modal class="backdrop is-hidden">
+                    <div class="modal">
+                        <button data-modal-close class="close-btn" type="button">
+                            <svg class="close-btn-icon" width="11px" height="11px">
+                                <use href="./images/icons.svg#close-btn"></use>
+                            </svg>
+                        </button>
+                        
+                    </div>
+                 </div>
+           </div>
         </section>
         <section class="benefits section-no-padding">
             <div class="container">
@@ -103,13 +113,29 @@
             <h2 class="secton-title">Чим ми займаємося</h2>
             <ul class="work-list">
                 <li>
-                    <img src="./images/case-a.jpg" alt="website development" width="370" height="294">
+                    <div class="work-thumb">
+                         <img src="./images/case-a.jpg" alt="website development" width="370" height="294">
+                         
+                         <div class="work-title-block">
+                            <h3 class="work-title">Десктопні додатки</h3>
+                         </div>
+                    </div>
                 </li>
                 <li>
-                    <img src="./images/case-b.jpg" alt="development of mobile applications" width="370" height="294">
+                    <div class="work-thumb">
+                         <img src="./images/case-b.jpg" alt="development of mobile applications" width="370" height="294">
+                         <div class="work-title-block">
+                            <h3 class="work-title">Мобільні додатки</h3>
+                         </div>
+                    </div>
                 </li>
                 <li>
-                    <img src="./images/case-c.jpg" alt="website design" width="370" height="294">
+                    <div class="work-thumb">
+                         <img src="./images/case-c.jpg" alt="website design" width="370" height="294">
+                         <div class="work-title-block">
+                            <h3 class="work-title">Дизайнерські рішення</h3>
+                         </div>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -387,5 +413,6 @@
     
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
